@@ -47,7 +47,6 @@ tw-link,.link,.visited{
 
 
 
-
 </style><script role="script" id="twine-user-script" type="text/twine-javascript">
 
 
@@ -57,53 +56,78 @@ tw-link,.link,.visited{
 
 
 
-
-</script><tw-passagedata pid="1" name="inicio" tags="" position="165,11">&quot;Mas um dia se inicia.&quot;
+</script><tw-passagedata pid="1" name="inicio" tags="" position="365,27">&quot;Mas um dia se inicia.&quot;
 
 &quot;A vida não tem sido fácil ultimamente.&quot;
 
 &quot;Todo dia a mesma rotina. As mesmas coisas...&quot;
 
-&quot;Bom, está na hora de [[levantar]]&quot;
+&quot;Que fome... [[Um café ia cair bem]].&quot;
 
+&quot;Que cheiro ruim é esse? [[Um banho é sempre uma boa]]&quot;
 
-&lt;script&gt;document.querySelector(&quot;tw-story&quot;).style.backgroundImage= &quot;url(&#x27;imagens/cena1_quarto.gif&#x27;)&quot;;
+&quot;Virei a noite jogando que nem vi que ainda estou com as roupas de ontem. Talvez seja melhor colocar uma [[roupa limpa]]&quot;
+
+&lt;script&gt;document.querySelector(&quot;tw-story&quot;).style.backgroundImage= &quot;url(&#x27;imagens/olhando1.png&#x27;)&quot;;
 &lt;/script&gt;
-</tw-passagedata><tw-passagedata pid="2" name="Um café ia cair bem" tags="" position="228,196">&quot;Ahhh o doce gosto de um café quente e delicioso.&quot;
+
+</tw-passagedata><tw-passagedata pid="2" name="Um café ia cair bem" tags="" position="228,203">&quot;Ahhh o doce gosto de um café quente e delicioso.&quot;
 
 &quot;Gosto de tomar um belo café enquanto vejo TV. Pena ser uma televisão antiga, não tenho grana para um equipamento melhor. Quanto mais uma cafeteira.&quot;
 
 &quot;Hum... acho que seria uma boa pintar essa parede tambem.&quot;
 
-[[&quot;Opa!&quot;]]
+&quot;Opa! Ja esta quase na hora de ir para o [[trabalho]]. Acho que la ainda tem os bolinhos de ontem que o chefe trouxe para todos. Melhor que minha geladeira vazia.&quot;
+
+&lt;script&gt;window.cafe1 =true&lt;/script&gt;
 
 &lt;script&gt;document.querySelector(&quot;tw-story&quot;).style.backgroundImage= &quot;url(&#x27;imagens/cena1_sofa_cafe.gif&#x27;)&quot;;&lt;/script&gt;</tw-passagedata><tw-passagedata pid="3" name="Um banho é sempre uma boa" tags="" position="378,203">&quot;É.. o cheiro esta vindo de mim.&quot; 
 
 &quot;Que vergonha, ainda bem que moro sozinho aqui e não tenho vizinhos para cheirar esse odor.&quot;
 
-&quot;Acho que como o primeiro a se mudar para essa vizinhaça, tenho o direito de ficar um pouco mais relaxado. Me sinto [[livre.]]&quot;
+&quot;Acho que como o primeiro a se mudar para essa vizinhaça, tenho o direito de ficar um pouco mais relaxado. Me sinto livre.&quot;
 
-&lt;script&gt;document.querySelector(&quot;tw-story&quot;).style.backgroundImage= &quot;url(&#x27;imagens/cena1_banheiro_banho.gif&#x27;)&quot;;&lt;/script&gt;</tw-passagedata><tw-passagedata pid="4" name="roupa limpa" tags="" position="536,202">&quot;Acho melhor trocar de roupa. Talvez usar a mesma por 1 semana pode pegar mal la no trabalho.&quot;
+&quot;Bom, mas se quero manter essa liberdade é melhor ir para o [[trabalho]] cheiroso. Acho que o cheiro de mofo dessa casa vai levar mais tempo para tirar.&quot;
+&lt;script&gt;window.banho1 =true&lt;/script&gt;
+&lt;script&gt;document.querySelector(&quot;tw-story&quot;).style.backgroundImage= &quot;url(&#x27;imagens/cena1_banheiro_banho.gif&#x27;)&quot;;&lt;/script&gt;</tw-passagedata><tw-passagedata pid="4" name="roupa limpa" tags="" position="527,203">&quot;Acho melhor trocar de roupa. Talvez usar a mesma por 1 semana pode pegar mal la no trabalho.&quot;
 
-&quot;Não que eu ligue, afinal lá sou muito bem visto e tenho otimos amigos. Mas é bom manter a [[aparencia legal]].&quot; 
+&quot;Não que eu ligue, afinal lá sou muito bem visto e tenho otimos amigos. Mas é bom manter a aparencia legal.&quot; 
 
-&lt;script&gt;document.querySelector(&quot;tw-story&quot;).style.backgroundImage= &quot;url(&#x27;imagens/cena1_trocarderoupa.gif&#x27;)&quot;;&lt;/script&gt;</tw-passagedata><tw-passagedata pid="5" name="trabalho" tags="" position="303,560">&quot;Como sempre o onibus chega pontual na parada e consigo chegar a tempo no trabalho. Estou juntando dinheiro para um carro legal&quot; 
+&quot;Nunca se sabe o que pode acontecer na vida? É melhor estamos de cueca limpa em caso de desastre.&quot;
 
-&quot;Ta na hora de [[trabalhar]]&quot;
+&quot;Bom esta na hora de ir para o [[trabalho]] aqui esta bem chato.&quot;
+&lt;script&gt;window.roupa1 =true&lt;/script&gt;
+&lt;script&gt;document.querySelector(&quot;tw-story&quot;).style.backgroundImage= &quot;url(&#x27;imagens/cena1_trocarderoupa.gif&#x27;)&quot;;&lt;/script&gt;</tw-passagedata><tw-passagedata pid="5" name="trabalho" tags="" position="362,411">&quot;Como sempre o onibus chega pontual na parada e consigo chegar a tempo no trabalho. Estou juntando dinheiro para um carro legal&quot; 
 
-&lt;script&gt;document.querySelector(&quot;tw-story&quot;).style.backgroundImage= &quot;url(&#x27;imagens/cena1_onibus.gif&#x27;)&quot;;&lt;/script&gt;</tw-passagedata><tw-passagedata pid="6" name="casa" tags="" position="287,861">&quot;Finalmente em casa...&quot;
+&quot;O emprego corre tranquilamente, eu sempre me divirto no trabalho. É um ambiente diferente. Eu me sinto muito bem aqui.&quot;
+(set: $cafe1 to window.cafe1)(if: $cafe1 is true)[&quot;Foi bom tomar aquele café, estou com uma energia extra hoje! Pena não ter mais os bolinhos para companhar&quot;](set: $banho1 to window.banho1)(if: $banho1 is true)[&quot;Acho que ter tomado aquele banho me fez bem, estou me sentido bem melhor hoje&quot;](set: $roupa1 to window.roupa1)(if: $roupa1 is true)[&quot;Finalmente usei essa camisa que comprei a 2 meses. Como é bom sair da rotina.&quot;]
+&quot;Não gosto de me enturmar tanto assim, mas as pessoas aqui são bem legais&quot;
+14h:
+(click-replace:&quot;14h:&quot;)[14h: &quot;Tudo normal&quot;
+16h:]
+(click-replace:&quot;16h:&quot;)[16h: &quot;Terminando aquela arte final bacana&quot;
+18h:]
+(click-replace:&quot;18h:&quot;)[18h: &quot;Pronto, acho que é melhor ir para [[casa]]&quot;]
+
+&lt;script&gt;document.querySelector(&quot;tw-story&quot;).style.backgroundImage= &quot;url(&#x27;imagens/cena1_onibus.gif&#x27;)&quot;;&lt;/script&gt;</tw-passagedata><tw-passagedata pid="6" name="casa" tags="" position="362,561">&quot;Finalmente em casa...&quot;
 
 &quot;Minha casinha pequena, simples, pintura mofada, seria legal ter um segundo andar com varanda. Ou uma garagem para guardar minha coisas..&quot;
 
-&quot;Que saco, as vezes morar sozinho é bem [[chato]]...&quot;
+&quot;Que saco, as vezes morar sozinho é bem chato...&quot;
 
-&lt;script&gt;document.querySelector(&quot;tw-story&quot;).style.backgroundImage= &quot;url(&#x27;imagens/casa1.png&#x27;)&quot;;&lt;/script&gt;</tw-passagedata><tw-passagedata pid="7" name="computador" tags="" position="454,694">-Nossa, que horas são? 
+&quot;Mas tem suas vantagens.&quot;
+
+&quot;Posso fazer o que quiser..&quot;
+
+&quot;Mas acho que vou ficar um pouco no [[computador]], tenho tarefas, talvez me distrair um pouco antes..&quot;
+
+&lt;script&gt;document.querySelector(&quot;tw-story&quot;).style.backgroundImage= &quot;url(&#x27;imagens/casa1.png&#x27;)&quot;;&lt;/script&gt;</tw-passagedata><tw-passagedata pid="7" name="computador" tags="" position="362,711">-Nossa, que horas são? 
 
 -Acho que perdi a noção do tempo...
 
 -Melhor ir [[dormir]]
 
-&lt;script&gt;document.querySelector(&quot;tw-story&quot;).style.backgroundImage= &quot;url(&#x27;imagens/pc_inicio.png&#x27;)&quot;;&lt;/script&gt;</tw-passagedata><tw-passagedata pid="8" name="dormir" tags="" position="674,202">A cama parece ser simples, uma cama normal de solteiro. 
+&lt;script&gt;document.querySelector(&quot;tw-story&quot;).style.backgroundImage= &quot;url(&#x27;imagens/pc_inicio.png&#x27;)&quot;;&lt;/script&gt;</tw-passagedata><tw-passagedata pid="8" name="dormir" tags="" position="703,193">A cama parece ser simples, uma cama normal de solteiro. 
 
 Você se sente confortável, esquece seus problemas e procura apenas relaxar..
 
@@ -111,58 +135,91 @@ Você se sente confortável, esquece seus problemas e procura apenas relaxar..
 
 Você tem uma noite tranquila e esta pronto para [[acordar]]..
 
-&lt;script&gt;document.querySelector(&quot;tw-story&quot;).style.backgroundImage= &quot;url(&#x27;imagens/tentando_dormir.gif&#x27;)&quot;;&lt;/script&gt;</tw-passagedata><tw-passagedata pid="9" name="acordar" tags="" position="842,175">Amanhece..
+&lt;script&gt;document.querySelector(&quot;tw-story&quot;).style.backgroundImage= &quot;url(&#x27;imagens/tentando_dormir.gif&#x27;)&quot;;&lt;/script&gt;</tw-passagedata><tw-passagedata pid="9" name="acordar" tags="" position="703,343">Amanhece..
 
 Mas um dia comum na sua vida.
 
 -Ahh, dormi feito uma pedra. Mas me sinto bem melhor.
 
--Bom, está na hora de levantar e [[tocar a vida]].
+-Bom, está na hora de levantar e tocar a vida.
+
+Quem sabe um bom [[café da manhã]]?
+
+Ou um bom [[banho]]?
+
+Talvez colocar [[roupas novas]] e ir com estilo para o trabalho?
 
 &lt;script&gt;document.querySelector(&quot;tw-story&quot;).style.backgroundImage= &quot;url(&#x27;imagens/cena1_quarto.gif&#x27;)&quot;;&lt;/script&gt;</tw-passagedata><tw-passagedata pid="10" name="café da manhã" tags="" position="553,493">-Ahhhhh nada melhor que um bom café da manhã!
 
 -Ainda mais com torradas fresquinhas. 
 
--Humm... Esse café esta com gosto diferente. Acho que preciso [[limpar a cafeteira]].
+-Humm... Esse café esta com gosto diferente. Acho que preciso limpar a cafeteira.
+
+Depois de você se acomodar no sofá e ver televisão, você se prepara para ir ao trabalho e seguir seu [[dia comum]]
+
+
+&lt;script&gt;window.cafe2 =true&lt;/script&gt;
 
 &lt;script&gt;document.querySelector(&quot;tw-story&quot;).style.backgroundImage= &quot;url(&#x27;imagens/cena1_sofa_cafe.gif&#x27;)&quot;;&lt;/script&gt;</tw-passagedata><tw-passagedata pid="11" name="banho" tags="" position="703,493">Você esta de tão bom humor que segue imediatamente para o choveiro.
 
 A agua quente do choveiro é um alivio para começar bem o dia.
 
-Você ouve o barulho da vizinhaça, parecer ser um dia agitado la [[fora]].
+Você ouve o barulho da vizinhaça, parecer ser um dia agitado la fora.
+
+Você se prepara para sair, da um oi para o carteiro e vai seguindo seu [[dia comum]]
+
+&lt;script&gt;window.banho2 =true&lt;/script&gt;
 
 &lt;script&gt;document.querySelector(&quot;tw-story&quot;).style.backgroundImage= &quot;url(&#x27;imagens/cena1_banheiro_banho.gif&#x27;)&quot;;&lt;/script&gt;</tw-passagedata><tw-passagedata pid="12" name="roupas novas" tags="" position="854,493">Você se prepara para trocar de roupa.
 
--Hum, tantas opções diferentes. Ainda bem que gosto de andar sempre diferente e mudar meu [[estilo]].
+-Hum, tantas opções diferentes. Ainda bem que gosto de andar sempre diferente e mudar meu estilo.
 
-&lt;script&gt;document.querySelector(&quot;tw-story&quot;).style.backgroundImage= &quot;url(&#x27;imagens/cena1_trocarderoupa.gif&#x27;)&quot;;&lt;/script&gt;</tw-passagedata><tw-passagedata pid="13" name="dia comum" tags="" position="697,841">Mais um dia no trabalho.
+-É importante mostrar uma boa aparencia, se quero fazer amigos la no trabalho e ser bem visto.
+
+E assim você segue seu [[dia comum]]
+
+&lt;script&gt;window.banho2 =true&lt;/script&gt;
+
+&lt;script&gt;document.querySelector(&quot;tw-story&quot;).style.backgroundImage= &quot;url(&#x27;imagens/cena1_trocarderoupa.gif&#x27;)&quot;;&lt;/script&gt;</tw-passagedata><tw-passagedata pid="13" name="dia comum" tags="" position="700,649">Mais um dia no trabalho.
 
 -Estranho, as pessoas parecem diferente hoje...
 
-Você prefere não incomodá-las. Mas, de repente as pessoas começam a se agitar e o [[clima muda]].
+Você prefere não incomodá-las. Mas, de repente as pessoas começam a se agitar e o clima muda.
 
-&lt;script&gt;document.querySelector(&quot;tw-story&quot;).style.backgroundImage= &quot;url(&#x27;imagens/trabalho.gif&#x27;)&quot;;&lt;/script&gt;</tw-passagedata><tw-passagedata pid="14" name="questionar" tags="" position="522,978">(set: $cafe2 to window.cafe2)(if: $cafe2 is true)[-Não.. Tem algo de diferente no ar. Quando foi que comprei café.. E porque estou de bom humor? Acho que devo esta trabalhando demais... ]
+(set: $cafe2 to window.cafe2)(if: $cafe2 is true)[-Talvez eu tenha tomado café importado demais. Devia estar vencido.. Mas.. tem algo de [[errado-&gt;questionar]].. Não, deve ser só coisa da minha [[cabeça-&gt;ignorar]] ]
+(set: $banho2 to window.banho2)(if: $banho2 is true)[-Que dia bonito para o trabalho. O vizinho da frente estava até preparando um churrasco para a tarde. Espera.. mas eu não sou [[vegetariano-&gt;questionar]]? Acho que uma escapadinha uma vez não [[faz mal-&gt;ignorar]]...]
+(set: $roupa2 to window.roupa2)(if: $roupa2 is true)[-Como é bom se destacar na multidão. Estou mais elegante. Um terno combina com tudo, é um ditado lendario dizem. Será que andar chamando atenção assim é [[comum-&gt;questionar]]? Acho que talvez eu deva [[esquecer-&gt;ignorar]] isso..]
+
+&lt;script&gt;document.querySelector(&quot;tw-story&quot;).style.backgroundImage= &quot;url(&#x27;imagens/trabalho.gif&#x27;)&quot;;&lt;/script&gt;</tw-passagedata><tw-passagedata pid="14" name="questionar" tags="" position="591,791">(set: $cafe2 to window.cafe2)(if: $cafe2 is true)[-Não.. Tem algo de diferente no ar. Quando foi que comprei café.. E porque estou de bom humor? Acho que devo esta trabalhando demais... ]
 (set: $banho2 to window.banho2)(if: $banho2 is true)[-Eu sou vegetariano? E tambem, eu não curto fazer o social com meus vizinhos. Já não gosto daquela casa pequena, imagina a vizinhança..]
 (set: $roupa2 to window.roupa2)(if: $roupa2 is true)[-Estou parecendo um pavão.. Eu não tenho esse costume.. porque afinal eu fui escolher isso??? Que vergonha...]
 
-E o dia vai [[passando]]..
+E o dia vai passando..
+Você fica com essa duvida é sua mente e incomoda bastante, mas você tem que se concentrar no trabalho.
+E a hora de voltar para a sua linda [[casa-&gt;casa2]] chega...
 
-&lt;script&gt;document.querySelector(&quot;tw-story&quot;).style.backgroundImage= &quot;url(&#x27;imagens/duvidas.gif&#x27;)&quot;;&lt;/script&gt;</tw-passagedata><tw-passagedata pid="15" name="ignorar" tags="" position="869,989">(set: $cafe2 to window.cafe2)(if: $cafe2 is true)[-Ah, isso é apenas coisa da minha cabeça. O café está ótimo! A cafeteira nova fez um otimo trabalho.]
+&lt;script&gt;window.questionar1 =true&lt;/script&gt;
+
+&lt;script&gt;document.querySelector(&quot;tw-story&quot;).style.backgroundImage= &quot;url(&#x27;imagens/duvidas.gif&#x27;)&quot;;&lt;/script&gt;</tw-passagedata><tw-passagedata pid="15" name="ignorar" tags="" position="804,793">(set: $cafe2 to window.cafe2)(if: $cafe2 is true)[-Ah, isso é apenas coisa da minha cabeça. O café está ótimo! A cafeteira nova fez um otimo trabalho.]
 (set: $banho2 to window.banho2)(if: $banho2 is true)[-Acho que uma escapadinha não faz mal. Irei no churrasco e irei aproveitar bastante. Fazer aquele social e conhecer novas pessoas!]
 (set: $roupa2 to window.roupa2)(if: $roupa2 is true)[-Pensando bem, acho que esse terno é minha cara! Acho que irei usar terno para tudo agora. Porque não tinha pensando nisso antes..]
+E o dia vai passando. 
+Sua mente esta livre de dúvidas e a satisfação preenche sua mente.
+Mas conforme o dia chega ao fim, você sabe que tera que voltar a sua humilde [[casa-&gt;casa2]]..
 
-E o dia [[comum vai passando]].. 
+&lt;script&gt;window.ignorar1 =true&lt;/script&gt;
 
-
-&lt;script&gt;document.querySelector(&quot;tw-story&quot;).style.backgroundImage= &quot;url(&#x27;imagens/trabalho2.png&#x27;)&quot;;&lt;/script&gt;</tw-passagedata><tw-passagedata pid="16" name="casa2" tags="" position="690,1146">Você vai chegando em sua casa. 
+&lt;script&gt;document.querySelector(&quot;tw-story&quot;).style.backgroundImage= &quot;url(&#x27;imagens/trabalho2.png&#x27;)&quot;;&lt;/script&gt;</tw-passagedata><tw-passagedata pid="16" name="casa2" tags="" position="699,947">Você vai chegando em sua casa. 
 
 (set: $questionar1 to window.cafe2)(if: $questionar1 is true)[Você passa a viagem de volta para a casa se sentindo estranho. Talvez você não esteja dormindo suficiente.]
 (set: $ignorar1 to window.banho2)(if: $ignorar1 is true)[Você teve um dia ótimo, seu trabalho foi excelente. O que mais poderia ser melhor nesse dia?]
 
-Então ao chegar, você nota um [[carro muito bonito]] estacionado na frente da sua casa.
+Então ao chegar, você nota um carro muito bonito estacionado na frente da sua casa.
+-Será do vizinho? Será que devo [[investigar]] o carro? (Você realmente gostou do carro).
+-Mas isso pode ser falta de respeito. Melhor [[ignorar o carro]] por hora.
+-Porque meu vizinho ia estacionar seu carro na frente da minha casa? Vou [[perguntar dele]]
 
-
-&lt;script&gt;document.querySelector(&quot;tw-story&quot;).style.backgroundImage= &quot;url(&#x27;imagens/carro.gif&#x27;)&quot;;&lt;/script&gt;</tw-passagedata><tw-passagedata pid="17" name="investigar" tags="" position="346,1203">Você nota como o carro é bonito, um modelo atual, moderno, carro de luxo.
+&lt;script&gt;document.querySelector(&quot;tw-story&quot;).style.backgroundImage= &quot;url(&#x27;imagens/carro.gif&#x27;)&quot;;&lt;/script&gt;</tw-passagedata><tw-passagedata pid="17" name="investigar" tags="" position="523,1088">Você nota como o carro é bonito, um modelo atual, moderno, carro de luxo.
 
 A porta dele esta aperta..
 
@@ -172,13 +229,21 @@ A porta dele esta aperta..
 
 &lt;script&gt;window.ignorarcarro1 =true&lt;/script&gt;
 
-&lt;script&gt;document.querySelector(&quot;tw-story&quot;).style.backgroundImage= &quot;url(&#x27;imagens/carro.gif&#x27;)&quot;;&lt;/script&gt;</tw-passagedata><tw-passagedata pid="18" name="ignorar o carro" tags="" position="891,1228">Ah esse carro deve ser do vizinho mesmo. Sou um cara legal, vou deixar ele estacionar na frente. Afinal, não tenho porque brigar por causa disso.
+&lt;script&gt;document.querySelector(&quot;tw-story&quot;).style.backgroundImage= &quot;url(&#x27;imagens/carro.gif&#x27;)&quot;;&lt;/script&gt;</tw-passagedata><tw-passagedata pid="18" name="ignorar o carro" tags="" position="854,1097">Ah esse carro deve ser do vizinho mesmo. Sou um cara legal, vou deixar ele estacionar na frente. Afinal, não tenho porque brigar por causa disso.
 
 Depois falo com ele.
 
-Estou me preocupando demais com [[coisas simples]].
+Estou me preocupando demais com coisas simples.
 
-&lt;script&gt;document.querySelector(&quot;tw-story&quot;).style.backgroundImage= &quot;url(&#x27;imagens/casa1.png&#x27;)&quot;;&lt;/script&gt;</tw-passagedata><tw-passagedata pid="19" name="perguntar dele" tags="" position="725,1280">Você bate na porta do vizinho e o chama.
+Hum.. olhando daqui, melhor mandar ajeitar o telhado da garagem e mandar pintar o andar de cima. As cores estão diferente do terreo, apesar de engraçado não combinam com o tamanho da casa. 
+
+Não quero que pensem que sou um esquisito.
+
+[[Lar doce lar..-&gt;casa3]]
+
+&lt;script&gt;window.ignorarcarro1 =true&lt;/script&gt;
+
+&lt;script&gt;document.querySelector(&quot;tw-story&quot;).style.backgroundImage= &quot;url(&#x27;imagens/cena1_sofa_cafe.gif&#x27;)&quot;;&lt;/script&gt;</tw-passagedata><tw-passagedata pid="19" name="perguntar dele" tags="" position="700,1099">Você bate na porta do vizinho e o chama.
 
 Ele aparece e pergunta o que há de errado.
 
@@ -186,9 +251,17 @@ Ele aparece e pergunta o que há de errado.
 
 &quot;hahahaha! O carro é seu. Você esta sempre com ele e ostentando como fica bonito na sua garagem.&quot;
 
-Ele se despede e,rindo muito, ele [[se retira]].
+Ele se despede e,rindo muito, ele se retira.
 
-&lt;script&gt;document.querySelector(&quot;tw-story&quot;).style.backgroundImage= &quot;url(&#x27;imagens/vizinho1.png&#x27;)&quot;;&lt;/script&gt;</tw-passagedata><tw-passagedata pid="20" name="dentro carro" tags="" position="378,1387">Você vasculha dentro do carro..
+Muito confuso você entra em [[casa-&gt;casa3]].
+
+-Melhor ignorar,é só uma piada de mau gosto..
+
+-Ou talvez seja melhor olhar dentro do [[carro-&gt;dentro carro]]..
+
+&lt;script&gt;window.vizinho1 =true&lt;/script&gt;
+
+&lt;script&gt;document.querySelector(&quot;tw-story&quot;).style.backgroundImage= &quot;url(&#x27;imagens/vizinho1.png&#x27;)&quot;;&lt;/script&gt;</tw-passagedata><tw-passagedata pid="20" name="dentro carro" tags="" position="475,1247">Você vasculha dentro do carro..
 Como se ja conhecesse o interior, você abre o porta luvas e encontra o documento do dono.
 
 -Como assim o carro é meu?! Ganhei um carro e não sabia?
@@ -199,7 +272,7 @@ Você sai muito confuso e entra na sua [[casa-&gt;casa3]] para pensar melhor na 
 
 &lt;script&gt;window.carro1 =true&lt;/script&gt;
 
-&lt;script&gt;document.querySelector(&quot;tw-story&quot;).style.backgroundImage= &quot;url(&#x27;imagens/duvidas.gif&#x27;)&quot;;&lt;/script&gt;</tw-passagedata><tw-passagedata pid="21" name="casa3" tags="" position="575,1610">(set: $carro1 to window.carro1)(if: $carro1 is true)[-Como assim o carro é meu?
+&lt;script&gt;document.querySelector(&quot;tw-story&quot;).style.backgroundImage= &quot;url(&#x27;imagens/duvidas.gif&#x27;)&quot;;&lt;/script&gt;</tw-passagedata><tw-passagedata pid="21" name="casa3" tags="" position="677,1398">(set: $carro1 to window.carro1)(if: $carro1 is true)[-Como assim o carro é meu?
 Você vai na cozinha e abre seu frigobar e tira uma cerveja para beber e pensar melhor.
 -Será que devo ligar para a policia?]
 (set: $vizinho1 to window.vizinho1)(if: $vizinho1 is true)[-O carro é meu?Acho que ele está me zoando..
@@ -209,12 +282,15 @@ Vou é curtir um filme na minha TV tela plana e esquecer isso.]
 -Besteira! Bom, de volta a casa.. Sei-la, as vezes aqui me da calafrio de morar só. 
 Melhor tomar um banho de banheira e descansar..]
 
-[[O que fazer?]]
+Antes que você complete seu pensamento, você nota que algo esta diferente..
+
+-Hum.. algo de errado não esta certo...
+
+Seu corpo está mais pesado. Acho que é o cansaço ou o frio do lugar.
+Seguir o que ia [[fazer-&gt;ação programada]]..
 
 
-
-
-&lt;script&gt;document.querySelector(&quot;tw-story&quot;).style.backgroundImage= &quot;url(&#x27;imagens/duvidas.gif&#x27;)&quot;;&lt;/script&gt;</tw-passagedata><tw-passagedata pid="22" name="ação programada" tags="" position="1011,1599">Você segue seu caminho..
+&lt;script&gt;document.querySelector(&quot;tw-story&quot;).style.backgroundImage= &quot;url(&#x27;imagens/olhando1.png&#x27;)&quot;;&lt;/script&gt;</tw-passagedata><tw-passagedata pid="22" name="ação programada" tags="" position="952,1242">Você segue seu caminho..
 (set: $carro1 to window.carro1)(if: $carro1 is true)[De repente.. você perde a vontade de ir pegar a bebida e prefere comer um macarrão. A policia pode ficar pra amanhã.
 &quot;Prioridades.&quot;
 Mas.. porque estou me sentindo estranho?]
@@ -226,9 +302,12 @@ Mas ultimanmente aqui em casa não consigo fazer isso..
 É como se algo sempre estivesse ao meu redor..
 Porque me sinto tão estranho em casa..]
 
-[[&quot;Tudo pode ser diferente&quot;]]
+-Não me sinto bem. Estou completemente sem sono e meu corpo está pesado.
 
-&lt;script&gt;document.querySelector(&quot;tw-story&quot;).style.backgroundImage= &quot;url(&#x27;imagens/duvidas.gif&#x27;)&quot;;&lt;/script&gt;</tw-passagedata><tw-passagedata pid="23" name="dormir2" tags="" position="1061,275">Mesmo sem vontade você deita e tenta descansar a mente. 
+-Não quero deitar, mas deixo meu corpo ser levado para a cama.
+Quero [[dormir-&gt;dormir2]]..
+
+&lt;script&gt;document.querySelector(&quot;tw-story&quot;).style.backgroundImage= &quot;url(&#x27;imagens/duvidas.gif&#x27;)&quot;;&lt;/script&gt;</tw-passagedata><tw-passagedata pid="23" name="dormir2" tags="" position="1000,211">Mesmo sem vontade você deita e tenta descansar a mente. 
 
 -Hoje foi um dia.. diferente..
 
@@ -240,7 +319,7 @@ Você tenta dormir.
 (click: &quot;andar&quot;)[Acho que o barulhos são coisas da [[minha cabeça]]..
 Mas talvez possa ser um ladrão.. Melhor ir [[dar uma olhada]]...]
 
-&lt;script&gt;document.querySelector(&quot;tw-story&quot;).style.backgroundImage= &quot;url(&#x27;imagens/ouviu_barulhos.gif&#x27;)&quot;;&lt;/script&gt;</tw-passagedata><tw-passagedata pid="24" name="minha cabeça" tags="" position="1249,390">Você volta a dormir como se nada tivesse acontecido.
+&lt;script&gt;document.querySelector(&quot;tw-story&quot;).style.backgroundImage= &quot;url(&#x27;imagens/ouviu_barulhos.gif&#x27;)&quot;;&lt;/script&gt;</tw-passagedata><tw-passagedata pid="24" name="minha cabeça" tags="" position="1060,403">Você volta a dormir como se nada tivesse acontecido.
 
 Uma boa noite..
 
@@ -249,7 +328,7 @@ Uma boa noite..
 
 &lt;script&gt;window.cabeca1 =true;window.ajuda1 =false&lt;/script&gt;
 
-&lt;script&gt;document.querySelector(&quot;tw-story&quot;).style.backgroundImage= &quot;url(&#x27;imagens/tentando_dormir.gif&#x27;)&quot;;&lt;/script&gt;</tw-passagedata><tw-passagedata pid="25" name="dar uma olhada" tags="" position="1387,187">Você cria coragem e resolve verificar o que foi o barulho estranho.
+&lt;script&gt;document.querySelector(&quot;tw-story&quot;).style.backgroundImage= &quot;url(&#x27;imagens/tentando_dormir.gif&#x27;)&quot;;&lt;/script&gt;</tw-passagedata><tw-passagedata pid="25" name="dar uma olhada" tags="" position="1209,257">Você cria coragem e resolve verificar o que foi o barulho estranho.
 Descendo as escadas você nota que os moveis estão diferentes.
 
 -Espera.. o que houve aqui?
@@ -263,7 +342,7 @@ Melhor [[sair da casa]] agora ou ligar para [[chamar ajuda]]?
 
 &lt;script&gt;window.olhar1 =true&lt;/script&gt;
 
-&lt;script&gt;document.querySelector(&quot;tw-story&quot;).style.backgroundImage= &quot;url(&#x27;imagens/salanova.gif&#x27;)&quot;;&lt;/script&gt;</tw-passagedata><tw-passagedata pid="26" name="proximo dia" tags="" position="1375,556">Um novo dia amanhece..
+&lt;script&gt;document.querySelector(&quot;tw-story&quot;).style.backgroundImage= &quot;url(&#x27;imagens/salanova.gif&#x27;)&quot;;&lt;/script&gt;</tw-passagedata><tw-passagedata pid="26" name="proximo dia" tags="" position="1197,572">Um novo dia amanhece..
 
 (set: $ajuda1 to window.ajuda1)(if: $ajuda1 is true)[Você acorda na sua cama e vai direto para a sala.
 
@@ -280,7 +359,7 @@ Você se levanta, faz carinho em seu gato e segue feliz para o emprego
 Talvez seja melhor ir de [[carro]]? Ou vou [[andando]]? 
 ]
 
-&lt;script&gt;document.querySelector(&quot;tw-story&quot;).style.backgroundImage= &quot;url(&#x27;imagens/estranhando_dia.gif&#x27;)&quot;;&lt;/script&gt;</tw-passagedata><tw-passagedata pid="27" name="sair da casa" tags="" position="1549,478">Você tenta sair da casa, mas todas as saidas estão trancadas!
+&lt;script&gt;document.querySelector(&quot;tw-story&quot;).style.backgroundImage= &quot;url(&#x27;imagens/estranhando_dia.gif&#x27;)&quot;;&lt;/script&gt;</tw-passagedata><tw-passagedata pid="27" name="sair da casa" tags="" position="1190,407">Você tenta sair da casa, mas todas as saidas estão trancadas!
 
 -O que está havendo??
 
@@ -295,9 +374,9 @@ Você arremessa uma cadeira na porta?]
 &lt;script&gt;window.ajuda1 =true&lt;/script&gt;
 &lt;script&gt;window.sala1 =true&lt;/script&gt;
 
-&lt;script&gt;document.querySelector(&quot;tw-story&quot;).style.backgroundImage= &quot;url(&#x27;imagens/duvidas.gif&#x27;)&quot;;&lt;/script&gt;</tw-passagedata><tw-passagedata pid="28" name="chamar ajuda" tags="" position="1648,289">(set: $sala1 to window.sala1)(if: $sala1 is true)[Você usa o telefone e chama a policia, mas nada acontece.
+&lt;script&gt;document.querySelector(&quot;tw-story&quot;).style.backgroundImage= &quot;url(&#x27;imagens/duvidas.gif&#x27;)&quot;;&lt;/script&gt;</tw-passagedata><tw-passagedata pid="28" name="chamar ajuda" tags="" position="1320,407">(set: $sala1 to window.sala1)(if: $sala1 is true)[Você usa o telefone e chama a policia, mas nada acontece.
 
--O que esta havendo? Me sinto observado..
+-O que esta havendo? Me sinto observando..
 
 O vizinho do lado apenas sorri e acena.
 
@@ -317,23 +396,24 @@ Quando você esta descendo as escadas para receber os policiais, algo lhe diz pa
 
 &lt;script&gt;window.ajuda1 =true&lt;/script&gt;
 
-&lt;script&gt;document.querySelector(&quot;tw-story&quot;).style.backgroundImage= &quot;url(&#x27;imagens/salanova.gif&#x27;)&quot;;&lt;/script&gt;</tw-passagedata><tw-passagedata pid="29" name="carro" tags="" position="1516,644">(set: $ajuda1 to window.ajuda1)(if: $ajuda1 is true)[Você corre desesperado..
+&lt;script&gt;document.querySelector(&quot;tw-story&quot;).style.backgroundImage= &quot;url(&#x27;imagens/salanova.gif&#x27;)&quot;;&lt;/script&gt;</tw-passagedata><tw-passagedata pid="29" name="carro" tags="" position="1338,660">(set: $ajuda1 to window.ajuda1)(if: $ajuda1 is true)[Você corre desesperado..
 Nervoso, pede uma carona ao seu vizinho, que aceita.
 
 -Cara, algo de muito sinistro esta acontecendo naquela casa..
 
-&quot;Para mim esta tudo normal. Eu acho que você tem muita coragem em morar naquela casa. Dizem que ela é mal-assombrada.&quot;
+&quot;Para mim esta tudo normal. Eu acho que você tem muita coragem em morar naquela casa. Dizem que muitas outras familias moraram lá e que simplesmente desapareceram da noite pro dia.&quot;
 
 Você sente um calafrio..
 
 E assim você chega ao [[trabalho-&gt;trabalho2]]
 ]
 (set: $cabeca1 to window.cabeca1)(if: $cabeca1 is true)[Você liga seu carro e sai em direção ao trabalho.
-Cada vez que vai se afastando da casa, você se sente livre.
+Cada vez que vai se afastando da casa, você sente como se uma marionete perdesse as cordas.
+Olhando o retorvisor, apenas um calafrio lhe atinge.
 E assim você chega ao [[trabalho-&gt;trabalho2]]
 ]
 
-&lt;script&gt;document.querySelector(&quot;tw-story&quot;).style.backgroundImage= &quot;url(&#x27;imagens/carro.gif&#x27;)&quot;;&lt;/script&gt;</tw-passagedata><tw-passagedata pid="30" name="andando" tags="" position="1202,602">(set: $ajuda1 to window.ajuda1)(if: $ajuda1 is true)[Você começa a se afastar da casa.
+&lt;script&gt;document.querySelector(&quot;tw-story&quot;).style.backgroundImage= &quot;url(&#x27;imagens/carro.gif&#x27;)&quot;;&lt;/script&gt;</tw-passagedata><tw-passagedata pid="30" name="andando" tags="" position="1024,618">(set: $ajuda1 to window.ajuda1)(if: $ajuda1 is true)[Você começa a se afastar da casa.
 Distraido, você acaba caindo em uma [[piscina]], como se algo tivesse lhe empurrado
 ]
 (set: $cabeca1 to window.cabeca1)(if: $cabeca1 is true)[-Um lindo dia para caminhar. 
@@ -346,7 +426,7 @@ E assim você chega ao [[trabalho-&gt;trabalho2]]
 
 &lt;script&gt;window.andando1 =true&lt;/script&gt;
 
-&lt;script&gt;document.querySelector(&quot;tw-story&quot;).style.backgroundImage= &quot;url(&#x27;imagens/casa1.png&#x27;)&quot;;&lt;/script&gt;</tw-passagedata><tw-passagedata pid="31" name="piscina" tags="" position="1475,828">Você esta dentro da piscina.
+&lt;script&gt;document.querySelector(&quot;tw-story&quot;).style.backgroundImage= &quot;url(&#x27;imagens/casa1.png&#x27;)&quot;;&lt;/script&gt;</tw-passagedata><tw-passagedata pid="31" name="piscina" tags="" position="1446,883">Você esta dentro da piscina.
 Não sabe mais o que fazer..
 Estava tudo tão certo com seu emprego dos sonhos..
 Só essa casa maldita que não lhe deixa em paz..
@@ -364,15 +444,17 @@ As escadas vão sumindo..
 ]
 
 
-</tw-passagedata><tw-passagedata pid="32" name="trabalho2" tags="" position="1240,802">(set: $ajuda1 to window.ajuda1)(if: $ajuda1 is true)[Assim que você chega, você se sente livre das amarras daquela casa.
+</tw-passagedata><tw-passagedata pid="32" name="trabalho2" tags="" position="1013,879">(set: $ajuda1 to window.ajuda1)(if: $ajuda1 is true)[Assim que você chega, você se sente livre das amarras daquela casa.
 Pesquisando na internet você descobre que a casa tem contos sinistros.
 Que pessoas ficam presas nela e desaparecem.
 -Como ninguem nunca conseguiu escapar?
+-Como que isso aconteceu comigo?
 
 E o dia passa e chega o horario de ir embora.
 
 -O que devo fazer? Voltar em casa e [[enfrentar]] o que esta la?
 -Ou talvez isso seja uma grande besteira! Minha familia esta me esperando...
+
 [[Familia]]?
 ]
 (set: $cabeca1 to window.cabeca1)(if: $cabeca1 is true)[
@@ -384,7 +466,7 @@ Algo não esta certo..
 -Chegou a hora! Vou enfrentar o que quer que esteja [[acontecendo-&gt;enfrentar]]!
 ]
 
-&lt;script&gt;document.querySelector(&quot;tw-story&quot;).style.backgroundImage= &quot;url(&#x27;imagens/trabalho2.png&#x27;)&quot;;&lt;/script&gt;</tw-passagedata><tw-passagedata pid="33" name="enfrentar" tags="" position="1540,1018">(set: $ajuda1 to window.ajuda1)(if: $ajuda1 is true)[Você volta para sua casa.
+&lt;script&gt;document.querySelector(&quot;tw-story&quot;).style.backgroundImage= &quot;url(&#x27;imagens/trabalho2.png&#x27;)&quot;;&lt;/script&gt;</tw-passagedata><tw-passagedata pid="33" name="enfrentar" tags="" position="1256,1070">(set: $ajuda1 to window.ajuda1)(if: $ajuda1 is true)[Você volta para sua casa.
 A prisão em forma de moradia.
 Com 3 andares, garagem, mobiliada. Parece ser uma mansão e tanto.
 Armado com coragem você entra nela.
@@ -403,7 +485,7 @@ Você então houve um [[barulho-&gt;final]]..
 
 &lt;script&gt;window.enfrentar1 =true&lt;/script&gt;
 
-&lt;script&gt;document.querySelector(&quot;tw-story&quot;).style.backgroundImage= &quot;url(&#x27;imagens/casa_nova.png&#x27;)&quot;;&lt;/script&gt;</tw-passagedata><tw-passagedata pid="34" name="Familia" tags="" position="1379,999">-Familia??
+&lt;script&gt;document.querySelector(&quot;tw-story&quot;).style.backgroundImage= &quot;url(&#x27;imagens/casa_nova.png&#x27;)&quot;;&lt;/script&gt;</tw-passagedata><tw-passagedata pid="34" name="Familia" tags="" position="1069,1073">-Familia??
 -O que está havendo?
 -Eu moro só!
 -Minha casa é simples!
@@ -415,7 +497,7 @@ Você então houve um [[barulho-&gt;final]]..
 
 &lt;script&gt;window.familia1 =true&lt;/script&gt;
 
-&lt;script&gt;document.querySelector(&quot;tw-story&quot;).style.backgroundImage= &quot;url(&#x27;imagens/familia.png&#x27;)&quot;;&lt;/script&gt;</tw-passagedata><tw-passagedata pid="35" name="final" tags="" position="1728,1010">(set: $ajuda1 to window.ajuda1)(if: $ajuda1 is true)[
+&lt;script&gt;document.querySelector(&quot;tw-story&quot;).style.backgroundImage= &quot;url(&#x27;imagens/familia.png&#x27;)&quot;;&lt;/script&gt;</tw-passagedata><tw-passagedata pid="35" name="final" tags="" position="1516,1126">(set: $ajuda1 to window.ajuda1)(if: $ajuda1 is true)[
 -Pode vim! Eu não tenho medo! Eu enfrento você de cara a cara!
 
 De repente, você percebe que a casa esta em constante mudança..
@@ -439,7 +521,7 @@ A casa so queria que você agisse conforme seus gostos.
 [[&quot;A vida é perfeita&quot;-&gt;final sala2]]
 ]
 
-&lt;script&gt;document.querySelector(&quot;tw-story&quot;).style.backgroundImage= &quot;url(&#x27;imagens/olhando1.png&#x27;)&quot;;&lt;/script&gt;</tw-passagedata><tw-passagedata pid="36" name="Titulo" tags="" position="34,18">&lt;br&gt;&lt;br&gt;&lt;br&gt;
+&lt;script&gt;document.querySelector(&quot;tw-story&quot;).style.backgroundImage= &quot;url(&#x27;imagens/olhando1.png&#x27;)&quot;;&lt;/script&gt;</tw-passagedata><tw-passagedata pid="36" name="Titulo" tags="" position="131,25">&lt;br&gt;&lt;br&gt;&lt;br&gt;
 &lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;
 &lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;
 &lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;
@@ -492,7 +574,7 @@ Tudo se apaga
 Reiniciar!
 (click: &quot;Reiniciar!&quot;)[&lt;script&gt;location.reload()&lt;/script&gt;]
 
-&lt;script&gt;document.querySelector(&quot;tw-story&quot;).style.backgroundImage= &quot;url(&#x27;imagens/pc_inicio.png&#x27;)&quot;;&lt;/script&gt;</tw-passagedata><tw-passagedata pid="41" name="creditos" tags="" position="18,204">UEA - Universidade do Estado do Amazonas
+&lt;script&gt;document.querySelector(&quot;tw-story&quot;).style.backgroundImage= &quot;url(&#x27;imagens/pc_inicio.png&#x27;)&quot;;&lt;/script&gt;</tw-passagedata><tw-passagedata pid="41" name="creditos" tags="" position="63,220">UEA - Universidade do Estado do Amazonas
 Pós Graduação em Desenvolvimento de Jogos Eletrônicos
 
 Equipe:
@@ -507,107 +589,7 @@ Klos Cunha
 [[voltar-&gt;Titulo]]
 
 
-&lt;script&gt;document.querySelector(&quot;tw-story&quot;).style.backgroundImage= &quot;url(&#x27;imagens/pc_inicio.png&#x27;)&quot;;&lt;/script&gt;</tw-passagedata><tw-passagedata pid="42" name="levantar" tags="" position="356,26">&quot;Que fome... [[Um café ia cair bem]].&quot;
-
-&quot;Que cheiro ruim é esse? [[Um banho é sempre uma boa]]&quot;
-
-&quot;Virei a noite jogando que nem vi que ainda estou com as roupas de ontem. Talvez seja melhor colocar uma [[roupa limpa]]&quot;
-
-&lt;script&gt;document.querySelector(&quot;tw-story&quot;).style.backgroundImage= &quot;url(&#x27;imagens/olhando1.png&#x27;)&quot;;
-&lt;/script&gt;</tw-passagedata><tw-passagedata pid="43" name="&quot;Opa!&quot;" tags="" position="228,353">&quot;Opa! Ja esta quase na hora de ir para o [[trabalho]]. Acho que la ainda tem os bolinhos de ontem que o chefe trouxe para todos. Melhor que minha geladeira vazia.&quot;
-
-&lt;script&gt;window.cafe1 =true&lt;/script&gt;
-
-&lt;script&gt;document.querySelector(&quot;tw-story&quot;).style.backgroundImage= &quot;url(&#x27;imagens/cena1_sofa_cafe.gif&#x27;)&quot;;&lt;/script&gt;</tw-passagedata><tw-passagedata pid="44" name="livre." tags="" position="352,349">&quot;Bom, mas se quero manter essa liberdade é melhor ir para o [[trabalho]] cheiroso. Acho que o cheiro de mofo dessa casa vai levar mais tempo para tirar.&quot;
-&lt;script&gt;window.banho1 =true&lt;/script&gt;
-&lt;script&gt;document.querySelector(&quot;tw-story&quot;).style.backgroundImage= &quot;url(&#x27;imagens/cena1_banheiro_banho.gif&#x27;)&quot;;&lt;/script&gt;</tw-passagedata><tw-passagedata pid="45" name="aparencia legal" tags="" position="494,339">&quot;Nunca se sabe o que pode acontecer na vida? É melhor estamos de cueca limpa em caso de desastre.&quot;
-
-&quot;Bom esta na hora de ir para o [[trabalho]] aqui esta bem chato.&quot;
-&lt;script&gt;window.roupa1 =true&lt;/script&gt;
-&lt;script&gt;document.querySelector(&quot;tw-story&quot;).style.backgroundImage= &quot;url(&#x27;imagens/cena1_trocarderoupa.gif&#x27;)&quot;;&lt;/script&gt;</tw-passagedata><tw-passagedata pid="46" name="trabalhar" tags="" position="279,700">&quot;O emprego corre tranquilamente, eu sempre me divirto no trabalho. É um ambiente diferente. Eu me sinto muito bem aqui.&quot;
-(set: $cafe1 to window.cafe1)(if: $cafe1 is true)[&quot;Foi bom tomar aquele café, estou com uma energia extra hoje! Pena não ter mais os bolinhos para companhar&quot;](set: $banho1 to window.banho1)(if: $banho1 is true)[&quot;Acho que ter tomado aquele banho me fez bem, estou me sentido bem melhor hoje&quot;](set: $roupa1 to window.roupa1)(if: $roupa1 is true)[&quot;Finalmente usei essa camisa que comprei a 2 meses. Como é bom sair da rotina.&quot;]
-&quot;Não gosto de me enturmar tanto assim, mas as pessoas aqui são bem legais&quot;
-14h:
-(click-replace:&quot;14h:&quot;)[14h: &quot;Tudo normal&quot;
-16h:]
-(click-replace:&quot;16h:&quot;)[16h: &quot;Terminando aquela arte final bacana&quot;
-18h:]
-(click-replace:&quot;18h:&quot;)[18h: &quot;Pronto, acho que é melhor ir para [[casa]]&quot;]
-
-&lt;script&gt;document.querySelector(&quot;tw-story&quot;).style.backgroundImage= &quot;url(&#x27;imagens/trabalho.gif&#x27;)&quot;;&lt;/script&gt;</tw-passagedata><tw-passagedata pid="47" name="chato" tags="" position="422,863">&quot;Mas tem suas vantagens.&quot;
-
-&quot;Posso fazer o que quiser..&quot;
-
-&quot;Mas acho que vou ficar um pouco no [[computador]], tenho tarefas, talvez me distrair um pouco antes..&quot;
-
-&lt;script&gt;document.querySelector(&quot;tw-story&quot;).style.backgroundImage= &quot;url(&#x27;imagens/olhando1.png&#x27;)&quot;;&lt;/script&gt;</tw-passagedata><tw-passagedata pid="48" name="tocar a vida" tags="" position="709,340">Quem sabe um bom [[café da manhã]]?
-
-Ou um bom [[banho]]?
-
-Talvez colocar [[roupas novas]] e ir com estilo para o trabalho?
-
-&lt;script&gt;document.querySelector(&quot;tw-story&quot;).style.backgroundImage= &quot;url(&#x27;imagens/cena1_quarto.gif&#x27;)&quot;;&lt;/script&gt;</tw-passagedata><tw-passagedata pid="49" name="limpar a cafeteira" tags="" position="584,643">Depois de você se acomodar no sofá e ver televisão, você se prepara para ir ao trabalho e seguir seu [[dia comum]]
-
-
-&lt;script&gt;window.cafe2 =true&lt;/script&gt;
-
-&lt;script&gt;document.querySelector(&quot;tw-story&quot;).style.backgroundImage= &quot;url(&#x27;imagens/cena1_sofa_cafe.gif&#x27;)&quot;;&lt;/script&gt;</tw-passagedata><tw-passagedata pid="50" name="fora" tags="" position="703,643">Você se prepara para sair, da um oi para o vizinho e vai seguindo seu [[dia comum]]
-
-&lt;script&gt;window.banho2 =true&lt;/script&gt;
-
-&lt;script&gt;document.querySelector(&quot;tw-story&quot;).style.backgroundImage= &quot;url(&#x27;imagens/vizinho1.png&#x27;)&quot;;&lt;/script&gt;</tw-passagedata><tw-passagedata pid="51" name="estilo" tags="" position="854,643">-É importante mostrar uma boa aparencia, se quero fazer amigos la no trabalho e ser bem visto.
-
-E assim você segue seu [[dia comum]]
-
-&lt;script&gt;window.banho2 =true&lt;/script&gt;
-
-&lt;script&gt;document.querySelector(&quot;tw-story&quot;).style.backgroundImage= &quot;url(&#x27;imagens/cena1_trocarderoupa.gif&#x27;)&quot;;&lt;/script&gt;</tw-passagedata><tw-passagedata pid="52" name="clima muda" tags="" position="697,991">(set: $cafe2 to window.cafe2)(if: $cafe2 is true)[-Talvez eu tenha tomado café importado demais. Devia estar vencido.. Mas.. tem algo de [[errado-&gt;questionar]].. Não, deve ser só coisa da minha [[cabeça-&gt;ignorar]] ]
-(set: $banho2 to window.banho2)(if: $banho2 is true)[-Que dia bonito para o trabalho. O vizinho da frente estava até preparando um churrasco para a tarde. Espera.. mas eu não sou [[vegetariano-&gt;questionar]]? Acho que uma escapadinha uma vez não [[faz mal-&gt;ignorar]]...]
-(set: $roupa2 to window.roupa2)(if: $roupa2 is true)[-Como é bom se destacar na multidão. Estou mais elegante. Um terno combina com tudo, é um ditado lendario dizem. Será que andar chamando atenção assim é [[comum-&gt;questionar]]? Acho que talvez eu deva [[esquecer-&gt;ignorar]] isso..]
-
-&lt;script&gt;document.querySelector(&quot;tw-story&quot;).style.backgroundImage= &quot;url(&#x27;imagens/trabalho2.png&#x27;)&quot;;&lt;/script&gt;</tw-passagedata><tw-passagedata pid="53" name="passando" tags="" position="563,1111">Você fica com essa duvida é sua mente e incomoda bastante, mas você tem que se concentrar no trabalho.
-E a hora de voltar para a sua linda [[casa-&gt;casa2]] chega...
-
-&lt;script&gt;window.questionar1 =true&lt;/script&gt;
-
-&lt;script&gt;document.querySelector(&quot;tw-story&quot;).style.backgroundImage= &quot;url(&#x27;imagens/trabalho.gif&#x27;)&quot;;&lt;/script&gt;</tw-passagedata><tw-passagedata pid="54" name="comum vai passando" tags="" position="814,1112">Sua mente esta livre de dúvidas e a satisfação preenche sua mente.
-Mas conforme o dia chega ao fim, você sabe que tera que voltar a sua humilde [[casa-&gt;casa2]]..
-
-&lt;script&gt;window.ignorar1 =true&lt;/script&gt;
-
-&lt;script&gt;document.querySelector(&quot;tw-story&quot;).style.backgroundImage= &quot;url(&#x27;imagens/trabalho.gif&#x27;)&quot;;&lt;/script&gt;</tw-passagedata><tw-passagedata pid="55" name="carro muito bonito" tags="" position="592,1280">-Será do vizinho? Será que devo [[investigar]] o carro? (Você realmente gostou do carro).
--Mas isso pode ser falta de respeito. Melhor [[ignorar o carro]] por hora.
--Porque meu vizinho ia estacionar seu carro na frente da minha casa? Vou [[perguntar dele]]
-
-&lt;script&gt;document.querySelector(&quot;tw-story&quot;).style.backgroundImage= &quot;url(&#x27;imagens/carro.gif&#x27;)&quot;;&lt;/script&gt;</tw-passagedata><tw-passagedata pid="56" name="coisas simples" tags="" position="863,1369">Hum.. olhando daqui, melhor mandar ajeitar o telhado da garagem e mandar pintar o andar de cima. As cores estão diferente do terreo, apesar de engraçado não combinam com o tamanho da casa. 
-
-Não quero que pensem que sou um esquisito.
-
-[[Lar doce lar..-&gt;casa3]]
-
-&lt;script&gt;window.ignorarcarro1 =true&lt;/script&gt;
-
-&lt;script&gt;document.querySelector(&quot;tw-story&quot;).style.backgroundImage= &quot;url(&#x27;imagens/cena1_sofa_cafe.gif&#x27;)&quot;;&lt;/script&gt;</tw-passagedata><tw-passagedata pid="57" name="se retira" tags="" position="667,1403">Muito confuso você entra em [[casa-&gt;casa3]].
-
--Melhor ignorar,é só uma piada de mau gosto..
-
--Ou talvez seja melhor olhar dentro do [[carro-&gt;dentro carro]]..
-
-&lt;script&gt;window.vizinho1 =true&lt;/script&gt;
-
-&lt;script&gt;document.querySelector(&quot;tw-story&quot;).style.backgroundImage= &quot;url(&#x27;imagens/vizinho1.png&#x27;)&quot;;&lt;/script&gt;</tw-passagedata><tw-passagedata pid="58" name="O que fazer?" tags="" position="779,1593">Antes que você complete seu pensamento, você nota que algo esta diferente..
-
--Hum.. algo de errado não esta certo...
-
-Seu corpo está mais pesado. Acho que é o cansaço ou o frio do lugar.
-Seguir o que ia [[fazer-&gt;ação programada]]..
-
-&lt;script&gt;document.querySelector(&quot;tw-story&quot;).style.backgroundImage= &quot;url(&#x27;imagens/salanova.gif&#x27;)&quot;;&lt;/script&gt;</tw-passagedata><tw-passagedata pid="59" name="&quot;Tudo pode ser diferente&quot;" tags="" position="1013,1438">-Não me sinto bem. Estou completemente sem sono e meu corpo está pesado.
-
--Não quero deitar, mas deixo meu corpo ser levado para a cama.
-Quero [[dormir-&gt;dormir2]]..
-
-&lt;script&gt;document.querySelector(&quot;tw-story&quot;).style.backgroundImage= &quot;url(&#x27;imagens/duvidas.gif&#x27;)&quot;;&lt;/script&gt;</tw-passagedata></tw-storydata>
+&lt;script&gt;document.querySelector(&quot;tw-story&quot;).style.backgroundImage= &quot;url(&#x27;imagens/pc_inicio.png&#x27;)&quot;;&lt;/script&gt;</tw-passagedata></tw-storydata>
 
 <script title="Twine engine code" data-main="harlowe">"use strict";function _defineProperty(e,t,n){return t in e?Object.defineProperty(e,t,{value:n,enumerable:!0,configurable:!0,writable:!0}):e[t]=n,e}function _toConsumableArray(e){if(Array.isArray(e)){for(var t=0,n=Array(e.length);t<e.length;t++)n[t]=e[t];return n}return Array.from(e)}var _slicedToArray=function(){function e(e,t){var n=[],r=!0,i=!1,o=void 0;try{for(var a,s=e[Symbol.iterator]();!(r=(a=s.next()).done)&&(n.push(a.value),!t||n.length!==t);r=!0);}catch(e){i=!0,o=e}finally{try{!r&&s.return&&s.return()}finally{if(i)throw o}}return n}return function(t,n){if(Array.isArray(t))return t;if(Symbol.iterator in Object(t))return e(t,n);throw new TypeError("Invalid attempt to destructure non-iterable instance")}}(),_typeof="function"==typeof Symbol&&"symbol"==typeof Symbol.iterator?function(e){return typeof e}:function(e){return e&&"function"==typeof Symbol&&e.constructor===Symbol&&e!==Symbol.prototype?"symbol":typeof e};!function(){/**
  * @license almond 0.3.3 Copyright jQuery Foundation and other contributors.
